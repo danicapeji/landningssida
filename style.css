@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 10px;
+}
+
+body {
+  background-color: rgb(226, 226, 226);
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+p {
+  font-size: 16;
+  font-weight: 400px;
+}
+.header {
+  background-color: rgb(77, 74, 72);
+  position: sticky;
+
+  top: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+  height: 120px;
+  z-index: 1;
+}
+
+.navbar {
+  font-size: 20px;
+}
+
+.ctaheader {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  position: sticky;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+.links,
+a {
+  text-decoration: none;
+
+  color: black;
+  text-align: center;
+  position: relative; /* Add this to create a positioning context for ::after */
+}
+a::after {
+  content: "";
+  display: block;
+  height: 2px; /* Set the height to match the thickness of the underline */
+  width: 100%; /* Make the underline span the entire width of the link */
+  background: black;
+  position: absolute; /* Position the underline relative to the link */
+  bottom: 0; /* Position the underline at the bottom of the link */
+  left: 0; /* Align the underline with the link's left edge */
+  transform: scaleX(
+    0
+  ); /* Initially set the width to 0, then scale it when hovering */
+  transform-origin: center; /* Set the transform origin to the left edge of the underline */
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+a:hover::after {
+  transform: scaleX(1); /* Scale the width to 100% on hover */
+}
+
+.herocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  padding: 30px;
+}
+
+.hero h2 {
+  padding: 10px 8px 40px 0px;
+}
+
+.ctaheader2 {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: black;
+}
+
+.ctaContainer {
+  display: flex;
+  height: 200px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  padding: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 217, 217);
+}
+
+.studentContainer {
+  padding: 150px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: rgb(233, 230, 230);
+  text-align: center;
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+.bilder {
+  width: 250px;
+}
+.text1 {
+  width: 30%;
+  text-align: center;
+}
+
+.ansökanContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+
+  text-align: center;
+  background-color: rgb(209, 207, 207);
+}
+
+.ctaheader2 {
+  border: 1px thin black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(223, 223, 223);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.länkar h2 {
+  text-align: left;
+}
+.länkar {
+  margin: 0% 10%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.adress {
+}
+
+.footerBild {
+  padding: 20px;
+  margin: 20px;
+}
